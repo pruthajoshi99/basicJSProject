@@ -1,0 +1,313 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    background-color: #cfd0c1;
+   
+}
+
+.container{
+    grid-column: 1/-1;
+    border: 1px solid black;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+
+    font-family: Apple Chancery;
+    font-size: 1.2rem;
+
+    background-color: antiquewhite;
+}
+
+
+.page-title{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+}
+
+.logo{
+    height: 100px;
+    width: 8rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+} 
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+   
+    list-style-type: none;
+    justify-content: space-evenly; 
+}
+
+
+.menu-item{
+    padding: 0.5rem;
+
+    cursor: pointer;
+}
+
+.menu-links{
+    color: black;
+    font-weight: bold;
+}
+
+.services {
+    position: relative;
+}
+
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu{
+        height: auto;
+}
+
+.submenu {
+    position: absolute;
+
+    padding: 0.2rem;
+    height: 0;
+
+    list-style-type: none;
+    overflow: hidden;
+    
+    background-color: antiquewhite;
+    
+}
+
+.submenu-item{
+    padding-top: 0.5rem;
+}
+
+.submenu-links  {
+    padding-right: 0.5rem;
+    
+    color: black;
+}
+
+
+.menu .menu-item:hover .menu-links{
+    font-size: 1.7rem;
+}
+
+.submenu .submenu-item:hover .submenu-links{
+    font-size: 1.5rem;
+}
+
+.main-heading{
+    /* padding-bottom: 0.5rem; */
+
+    font-family: Apple Chancery;
+    font-size: 1.8rem;
+    text-align: center;
+    
+}
+
+.sub-heading{
+    padding-bottom: 0.5rem;
+
+    font-family: Apple Chancery;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+
+.message{
+    grid-column: 1/-1;
+
+    text-align: center;
+    text-decoration: solid underline;
+}
+
+.message-text{
+    font-size: 1.3rem;
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: 1.3rem;
+}
+
+input {
+    display: inline-block;
+    height: 2rem;
+    width: 10rem;
+}
+
+
+.name-label, .email-label, .tier-label {
+    grid-column: 1/2;
+    padding: 0.3 rem;
+    margin: 0.5rem;
+}
+
+.name-input, .email-input {
+    grid-column: 2/3;
+}
+
+.promotion-email {
+    grid-column: 1/-1;
+    padding: 0.5rem;
+
+    text-align: center;
+
+} 
+
+.tier-dropdown {
+    display: block;
+    width: 21.5%;
+    min-width: fit-content;
+    padding: 0.13rem;
+
+    text-align: center;
+    font-size: smaller;
+} 
+
+ .submit-form {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+
+    align-items: center;
+
+} 
+
+.submit-button{
+    display: inline-block; 
+    width: fit-content;
+    padding: 0.5rem;
+    margin: 8px 0;
+    border: 1px solid black;
+
+    background-color: lightgrey;
+    color: black;
+
+    font-size: 1.2rem;
+}
+
+.pageFooter {
+    border-top: 1px solid black;
+    width: 100%;
+
+    background-color: antiquewhite;
+    font-size: 1.1rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+
+    text-align: center;
+    align-content: center;
+    list-style-type: none;
+
+    font-size: 1rem;
+}
+
+.footer-para{
+    text-align: center;
+}
+
+.footer-item{
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 50rem) {
+
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .page-title{
+        font-size: 3rem;
+    }
+
+    .nav-menu{
+        position: absolute;
+        right: 0;
+        top:1rem;   
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-right: 1rem;
+        
+    }
+
+    .menu-item{
+        padding: 1rem;
+
+        cursor: pointer;
+    }
+
+    .form-container{
+        display: grid;
+        grid-gap: .8rem;
+        grid-template-columns: auto auto;
+        padding: .8rem;
+    
+        justify-content: center;
+    }
+
+    .main{
+        margin-top: 1rem;
+    }
+
+    input {
+        display: inline-block;
+        height: 2rem;
+        width: 20rem;
+    }
+    
+
+    .tier-dropdown {
+        width: 20rem;
+       
+    } 
+
+    .submit-form {
+        grid-column: 1/-1;
+        padding: 1.2rem;
+    
+        justify-self: center;
+    } 
+
+}
+
+@media screen and (min-width: 32rem) {
+    .pageFooter {
+        position: absolute;
+        bottom: 0;
+    }
+}

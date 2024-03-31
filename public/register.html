@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/register.css"/>
+  </head>
+  <body>
+    <div class="container">
+        <header class="header"> 
+            <h1 class="page-title">
+              <a href="index.html">
+                  <img class="logo" src="images/Website_Logo.png" alt="Website logo"> 
+              </a>
+              World of Bears</h1>
+              <nav class="nav-menu">
+                <ul class="menu">
+                  <li class="menu-item"><a class="menu-links" href="index.html">Home</a></li>
+                  <li class="menu-item"><a class="menu-links" href="about.html">About</a></li>
+                  <li class="menu-item"><a class="menu-links services" href="#">Services</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a class="submenu-links" href="rescue.html">Cub rescue, care and wild release</a></li>
+                        <li class="submenu-item"><a class="submenu-links" href="tours.html">Bear Viewing Tours</a></li>
+                        <li class="submenu-item"><a class="submenu-links" href="encounters.html">Bear Encounters </a></li>
+                        <li class="submenu-item"><a class="submenu-links" href="relocation.html">Relocation</a></li>
+                    </ul>
+                  </li>  
+                  <li class="menu-item"><a class="menu-links services" href="#">Contact</a>
+                    <ul class="submenu">
+                      <li class="submenu-item"><a class="submenu-links" href="phone.html">Customer Services</a></li>
+                      <li class="submenu-item"><a class="submenu-links" href="email.html">Connect Through Email</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-item"><a class="menu-links" href="register.html">Register</a></li>
+                </ul>
+              </nav>
+          </header>
+
+      <main class="main">
+        <h2 class="main-heading">Registration form</h2>
+        <h3 class="sub-heading">Join Our Bear Conservation Community: Sign Up for Updates</h3>
+
+        <form action="/register" method="post">
+            <div class="message">
+                <p class="message-text">Required fields are denoted by <span aria-label="required">*</span></p>
+            </div>
+
+            <div class="form-container">
+                <label class="name-label" for="user-name">Name: <span aria-label="required">*</span></label>
+                <input class="name-input" id="user-name" type="text" name="name" required>
+
+                <label class="email-label" for="user-email" >Email: <span aria-label="required">*</span></label>
+                <input class="email-input" id="user-email" type="email" name="email" required>
+
+                <label class="tier-label" for="tier">Newsletter frequency: <span aria-label="required">*</span></label>
+                <select class="tier-dropdown" name="frequency" id="tier" required>
+                    <option value="">Please Select</option>
+                    <option value="1">Weekly</option>
+                    <option value="2">Biweekly</option>
+                    <option value="3">Monthly</option>
+                </select>
+
+                <div class="promotion-email">
+                    <label class="promotion-label" for="annoy_me"> Do you want us to send you promotion mails?</label>
+                    <input class="promotion-input" type="checkbox" id="annoy_me" name="promotion-mails" checked>
+                </div>
+
+                <div class="submit-form">
+                    <button class="submit-button" type="submit">Register</button>
+                </div>
+
+            </div>
+
+        </form>    
+      </main>
+      <footer class="pageFooter">
+        <ul class="footer-menu">
+          <li class="footer-item"><a href="privacy.html">Privacy Policy</a></li>
+          <li class="footer-item"><a href="term.html">Terms and condition</a></li>
+        </ul>
+        <div>
+        <p class="footer-para">&copy; WorldOfBears.com Inc. All Rights Reserved. <a href="company.html">Our company | </a> <a
+            href="carrers.html">careers </a></p>
+        </div>
+    </footer>
+    </div>
+  </body>
+</html>

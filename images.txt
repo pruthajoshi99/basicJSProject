@@ -1,0 +1,13 @@
+/* Images on index.html */
+https://unsplash.com/photos/z4yzSsH5EAo  // Brown bear
+https://unsplash.com/photos/WZV9Qs0vR5w  //  Black bear
+https://unsplash.com/photos/KgRKlQXmHR0  //  Polar bear
+https://unsplash.com/photos/s-fD5Tpew2k  //  Panda bear
+https://unsplash.com/photos/rki6OCPh7Z8  //  Andean bear
+https://unsplash.com/photos/Bkci_8qcdvQ  // Backgound image on index page
+
+/* Image on aboutus.html */
+https://unsplash.com/photos/HjgoRh_7nqY // About_Us_Background
+
+/* Logo image on every page */
+https://unsplash.com/photos/k2DVsB4hTBQ
